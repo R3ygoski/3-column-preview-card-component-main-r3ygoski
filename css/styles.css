@@ -1,0 +1,118 @@
+:root {
+    --orange: #e38826;
+    --cyan: #006970;
+    --dark-cyan: #004241;
+    --white: #f2f2f2;
+    --gray:#ffffffbf;
+}
+* {
+    font-family: 'Lexend Deca';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 100% 100% 100%;
+    grid-template-columns: 33.4% 33.3% 33.3%;
+    grid-template-areas: 
+    'sedan suv luxury';
+    height: 60%;
+    width: 60%;
+    border-radius: 10px;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display';
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 44px;
+}
+
+main>div>p {
+    width: 210px;
+    color: var(--gray);
+    font-size: 15px;
+    line-height: 25px;
+}
+
+button {
+    width: 55%;
+    height: 10%;
+    border-radius: 25px;
+    border-style: none;
+    font-weight: 700;
+    margin-top: 30%;
+    cursor: pointer;
+    text-transform: capitalize;
+    padding: 0;
+    background: var(--white);
+    transition: .2s;
+}
+
+button:hover {
+    background: transparent;
+    border: var(--white) 2px solid;
+}
+
+#sedan {
+    background: var(--orange);
+    border-radius: 10px 0px 0px 10px;
+}
+#suv {
+    background: var(--cyan);
+}
+#luxury {
+    background: var(--dark-cyan);
+    border-radius: 0px 10px 10px 0px;
+}
+
+#btn-txt-sed-color:hover, #btn-txt-suv-color:hover, #btn-txt-lux-color:hover  {
+    color: var(--white);
+}
+#btn-txt-sed-color {
+    color: var(--orange);
+}
+#btn-txt-suv-color {
+    color: var(--cyan);
+}
+#btn-txt-lux-color {
+    color: var(--dark-cyan);
+}
+
+.flex-div {
+    display: flex;
+    flex-flow: column;
+    padding: 50px 0px 0px 50px;
+}
+
+.car-image {
+    width: 75px;
+    height: auto;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: black;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
